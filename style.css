@@ -80,6 +80,11 @@ nav ul li a:hover {
     margin-bottom: 40px; 
 }
 
+.projects button:hover {
+    color: black;
+    font-weight: 700;
+}
+
 .list {
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
     font-size: 20px;
@@ -87,7 +92,6 @@ nav ul li a:hover {
 
 .list img {
     width: 50%;
-    visibility: hidden;
     display: none;
 }
 
