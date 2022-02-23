@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang ="en" data-lt-installed = "true">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel = "stylesheet" href = "style.css" type ="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <title> My Portfolio </title>
     </head>
     <body>
+        <script src ="main.js"></script>
             <nav> 
-                <a href ="index.html"> About me </a>
-                <a href = "#"> Projects </a>
-                <a href = "#"> Skills </a>
-                <a href = "#"> Contact </a>
+                <h2 id ="logo"> Ada Lovelace </h2>
+                <ul class ="navigation-items">
+                    <li class ="navigation-item"> <a href ="index.html"> About me </a> </li>
+                    <li class ="navigation-item"> <a href ="#"> Projects </a> </li>
+                    <li class ="navigation-item"> <a href ="#"> Skills </a> </li>
+                    <li class ="navigation-item"> <a href ="contact.html"> Contact </a> </li>
+                </ul>
             </nav>
-            
-            <h1 id ="name"> Ada Lovelace </h1>
 
-            <div class ="aboutme">
+            <main> 
+            
+            <section id ="about-me"> 
                 <div class ="aboutme-text">
             <h2> About me </h2> 
             <p> Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer, chiefly known for my work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.</p>
-            <br>
             <p> I am one of the first to recognize that machines have applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine.</p>
-            <br>
             <p> In my free time I like to read about scientific developments, mathematics, and computational mathematics. I also like to take my chances of winning big.</p>
-            <br>
-            <p> Fun fact! I've been programing for 6,507,180,258 seconds! </p>
+            <p> Fun fact! I've been programing for <span id ="time-container"> 0 </span> </p>
             </div>
             <div class ="aboutme-image">
             <img src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwODQwOTQ2MTkw/ada-lovelace-20825279-1-402.jpg" alt="A photo of Ada Lovelace" class="portrait">
             </div> 
             </div>
-
+        </section>
             <div class ="projects">
-
             <h2> Projects </h2>
-
+            <div class ="list">
             <ul>
-                <li> The first computer program </li>
-                <li> The Analytical Engine </li>
-                <li> The Ada Programming Language </li> 
+                <li id ="first-computer-program"> The first computer program </li> 
+                <img id = "image1" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg">
+                <li id ="analytical-engine"> The Analytical Engine </li>
+                <img id =image2" src ="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb">
+                <li id ="ada-programming-language"> The Ada Programming Language </li>
+                <img id =image3" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/220px-Ada_Mascot_with_slogan.svg.png">
             </ul> 
+            </div>
+            </div>
+
+            <div class = "skills">
+
+            <h2> Skills </h2>
+
+            <div class = "icons">
+          
+                <i class="fab fa-html5 fa-3x" ></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-js fa-3x"></i>
+                <i class="fab fa-react fa-3x"></i>
+                <i class="fab fa-aws fa-3x"></i>
+                <i class="fab fa-sketch fa-3x"></i>
+                <i class="fab fa-figma fa-3x"></i>
+                <i class="fab fa-git fa-3x"></i>
+                <i class="fab fa-chrome fa-3x"></i>
+                <i class="fas fa-terminal fa-3x"></i>
+                <i class="fas fa-universal-access fa-3x"></i>
+                <i class="fab fa-npm fa-3x"></i>
+                <i class="fab fa-node fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
 
             </div>
 
-            <h2> Skills </h2>
-            
-            <img src = " " alt = "Programmig languages logos"> 
+            </div>
+
+            </main>
+
+        </body>
 
         <footer> 
-            <span> Made with <img src = "" alt ="Red heart emoji"> in London </span>
+            <p> Made with <span class ="heart"> ♥ </span> in London <p>
+            </div>
         </footer>
 
-    </body>
-
+        <script src="https://kit.fontawesome.com/12939d476d.js" crossorigin="anonymous"></script>
 
 </html>
